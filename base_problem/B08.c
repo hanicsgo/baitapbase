@@ -1,14 +1,12 @@
 #include <stdio.h>
-#include <ctype.h>
+#include <string.h>
 
-int main(void) 
+int main() 
 {
-    char x = 'a';
-    printf("Kí tự hiện tại là %c\n", x);
-
-    // Kí tự x chuyển về kiểu viết hoa
-    x = toupper(x); 
-    printf("Kí tự đã chuyển là %c\n", x);
-
+    char ten[] = "c";
+ 
+    // String function biến đổi thành kí tự viết hoa
+    strupr(ten);
+    printf("%s", ten);
     return 0;
 }

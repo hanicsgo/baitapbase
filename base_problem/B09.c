@@ -1,14 +1,12 @@
 #include <stdio.h>
-#include <ctype.h>
+#include <string.h>
 
-int main(void) 
+int main() 
 {
-    char x = 'F';
-    printf("%c\n", x);
-
-    // Kí tự x chuyển về kiểu viết thường
-    x = toupper(x) ^ 32; 
-    printf("%c", x);
-
+    char ten[] = "C";
+ 
+    // String function biến đổi thành kí tự viết thường
+    strlwr(ten);
+    printf("%s", ten);
     return 0;
 }
